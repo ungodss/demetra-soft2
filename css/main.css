@@ -271,7 +271,7 @@ align-items: center;
     color: var(--brown-color);
 }
 
-.header__button {
+.header__button{
     margin-right: 35px;
     background-color: transparent;
     color: var(--white-color);
@@ -346,3 +346,21 @@ margin-bottom: 30px;
 .modal__close:focus-visible{
     outline-color: black;
 }
+
+.section__button {
+    margin-right: 35px;
+    background-color: transparent;
+    color: #707070;
+    border: 3px solid var(--brown-color);
+    font-size: 25px;
+    padding: 10px 40px;
+    cursor: pointer;
+    outline: 2px solid transparent;
+    outline-offset: 3px ;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out ;
+}
+
+.section__button:hover{
+    background-color: #846743;
+}
+
