@@ -357,10 +357,11 @@ margin-bottom: 30px;
     cursor: pointer;
     outline: 2px solid transparent;
     outline-offset: 3px ;
-    transition: background-color .2s ease-in-out, color .2s ease-in-out ;
+    transition: background-color .1s ease-in-out, color .2s ease-in-out ;
 }
 
 .section__button:hover{
-    background-color: #846743;
+    color: var(--bg-color);
+    background-color: var(--brown-color);
 }
 
