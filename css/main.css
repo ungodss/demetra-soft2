@@ -31,6 +31,10 @@ body {
     font-family: 'Century Gothic';
 }
 
+.container{
+width: 100%;
+}
+
 main {
     display: block;
 }
@@ -379,6 +383,38 @@ margin-bottom: 30px;
     height: 100%;
     background: rgba(0,0,0,.6);
     z-index: 2;
+}
+
+.about__second {
+    margin-top: 50px;
+    display: flex;
+}
+.about__second-left {
+}
+.about__second-item {
+}
+.idea {
+}
+.about__second-title1 {
+}
+.about__second-text1 {
+}
+.about__second-line {
+}
+.process {
+}
+.result {
+}
+.about__second-right {
+
+}
+.about__second-img {
+    width: 30px;
+    height: 30px;
+}
+
+main{
+    margin-top: 200px;
 }
 
 
