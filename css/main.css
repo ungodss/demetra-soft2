@@ -510,6 +510,11 @@ background-size: cover;
 }
 .services__item {
 }
+
+.services__item:hover{
+    color: var(--brown-color);
+}
+
 .services__title {
     text-align: center;
     font-size: 50px;
