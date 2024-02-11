@@ -543,7 +543,10 @@ margin-bottom: 50px;
 }
 
 .footer__title-h4 {
+    color: var(--white-color);
     font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 100px;
     margin-bottom: 90px;
 }
 
