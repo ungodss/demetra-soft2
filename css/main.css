@@ -716,6 +716,256 @@ background-size: cover;
 }
 
 
+/* проекты */
+.project{
+    background-color: var(--bg-color);
+}
+
+.flex {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.slider-wrapper div {
+    position: relative;
+}
+
+.slider-wrapper {
+    margin-top: 5vw;
+    margin-left: 11vw;
+}
+
+.slide-image {
+    height: 24vw;
+}
+
+.slide-image img {
+    width: 24vw;
+    cursor: pointer;
+}
+
+.slide-content {
+    width: 25vw;
+    color: #fff;
+    padding: 3vw 18vw 3vw 9vw;
+}
+
+.slide-date {
+    color: var(--brown-color);
+    font-size: 1.1vw;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    padding-bottom: 1.4vw;
+}
+
+.slide-title {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    line-height: 1.55vw;
+    padding-bottom: 1.8vw;
+}
+
+.slide-text {
+    font-size: 1vw;
+    line-height: 1.5vw;
+    opacity: 0.8;
+    padding-bottom: 4vw;
+}
+
+.slide-more {
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    float: left;
+    font-size: 0.9vw;
+}
+
+.slide-bullet {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #0b8bcc;
+    border-radius: 200%;
+    position: relative;
+    margin-left: 1.2vw;
+}
+
+.slide-nav {
+    margin-left: 64vw;
+    margin-top: -5.5vw;
+}
+
+div.overlay-blue {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: 0.5s ease all;
+}
+
+div.overlay-blue:hover {
+    background-color: rgba(13, 27, 43, 0.5);
+}
+
+.arrows {
+    width: 3.5vw;
+    margin-top: -5.8vw;
+    margin-left: 72vw;
+    position: relative;
+}
+
+.arrow {
+    display: inline-block;
+    position: absolute;
+    width: 1.2vw;
+    height: 1.2vw;
+    background: transparent;
+    text-indent: -9999px;
+    border-top: 0.15vw solid #fff;
+    border-left: 0.15vw solid #fff;
+    transition: all .1s ease-in-out;
+    text-decoration: none;
+    color: transparent;
+}
+
+.arrow:hover {
+    border-color: #0A8ACB;
+    border-width: 0.25vw;
+}
+
+.arrow:before {
+    display: block;
+    height: 200%;
+    width: 200%;
+    margin-left: -50%;
+    margin-top: -50%;
+    content: "";
+    transform: rotate(45deg);
+}
+
+.arrow.prev {
+    transform: rotate(-45deg);
+    left: 0;
+}
+
+.arrow.next {
+    transform: rotate(135deg);
+    right: 0;
+}
+
+
+.slider__title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+}
+
+.line {
+    position: relative;
+    top: 20px;
+    left: 619px;
+    background-color: var(--brown-color);
+    width: 1300px;
+    height: 3px;
+}
+
+.class2 {
+    position: relative;
+    top: 250px;
+    left: 750px;
+    font-size: 30px;
+    margin-right: 35px;
+    background-color: transparent;
+    color: var(--brown-color);
+    border: 3px solid var(--brown-color);
+    padding: 10px 40px;
+    cursor: pointer;
+    outline: 2px solid transparent;
+    outline-offset: 3px;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.class2:hover {
+    background-color: var(--brown-color);
+    color: var(--white-color);
+}
+
+.class2:focus-visible {
+    outline-color: white;
+}
+
+
+.left-arrow,
+.right-arrow {
+    display: inline-flex;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.left-arrow::before,
+.right-arrow::before,
+.left-arrow::after,
+.right-arrow::after {
+    display: inline-flex;
+    position: absolute;
+    content: '';
+}
+
+
+.left-arrow::before,
+.right-arrow::before {
+    top: 8px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+}
+
+.left-arrow::after,
+.right-arrow::after {
+    width: 10px;
+    height: 10px;
+    top: 2px;
+}
+
+.left-arrow::after {
+    left: 0;
+    border-top: 3px solid gray;
+    border-left: 3px solid gray;
+    transform: rotate(-45deg);
+}
+
+.right-arrow::after {
+    right: 0;
+    border-top: 3px solid gray;
+    border-right: 3px solid gray;
+    transform: rotate(45deg);
+}
+
+
+.left-arrow:hover::before,
+.right-arrow:hover::before {
+    background-color: black;
+}
+
+.left-arrow:hover::after {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+
+.right-arrow:hover::after {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+
+
+/* Футер */
 .footer {
     min-height: 880px;
     background-color: var(--bg-color);
