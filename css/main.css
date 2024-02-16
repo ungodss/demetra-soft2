@@ -708,7 +708,7 @@ background-size: cover;
     text-align: center;
     font-size: 50px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .services__text {
     text-align: center;
@@ -720,6 +720,7 @@ background-size: cover;
 .project{
     background-color: var(--bg-color);
     min-height: 1080px;
+    padding-top: 50px;
 }
 
 .slider__title {
@@ -727,21 +728,23 @@ background-size: cover;
     text-transform: uppercase;
     font-size: 50px;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .line {
     position: relative;
-    top: 20px;
-    left: 619px;
+    top: 0px;
+    left: 603px;
     background-color: var(--brown-color);
     width: 1300px;
     height: 3px;
+    margin-bottom: 100px;
 }
 
 .class2 {
     position: relative;
-    top: -80px;
-    left: 650px;
+    top: 120px;
+    left: 260px;
     font-size: 30px;
     margin-right: 35px;
     background-color: transparent;
@@ -763,178 +766,100 @@ background-size: cover;
     outline-color: white;
 }
 
-li {
-    list-style: none;
-  }
-  input[type="radio"] {
-    display: none;
-  }
-  .js-slider {
-    position: relative;
-    width: 80%;
-    height: 90vh;
+.container{
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 15px;
+}
+
+.card{
+    background-color: white;
+}
+
+.card__img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+
+/* Настройки маркированного списка */
+.hover-effect-scale {
+    background-color: var(--bg-color);
+    list-style:none;
     margin: 0 auto;
-  }
-  .js-slider_item {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding: 1rem 3rem;
-    opacity: 0;
-    visibility: hidden;
-    transform-origin: right center;
-    transform: translate3d(0%, 0%, 0) rotateY(30deg) scaleX(0.95);
-    transition: all 1s ease,transform 1s cubic-bezier(0.43, 0.28, 0.51, 1);
-  }
-  #s-1:checked ~ .js-slider .js-slider_item.img-1,
-  #s-2:checked ~ .js-slider .js-slider_item.img-2,
-  #s-3:checked ~ .js-slider .js-slider_item.img-3 {
-    opacity: 1;
-    visibility: visible;
-    transform-origin: left center;
-    transform: translate3d(0, 0, 0) rotateY(0deg) scaleX(1);
-  }
-  .js-slider_img {
-    width: 100%;
-    height: 60%;
-    position: relative;
-    overflow: hidden;
-  }
-  .c-img-w-full {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    transform: translate3d(-50%, -50%, 0);
-  }
-  .c-img-h-full {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: 100%;
-    transform: translate3d(-50%, -50%, 0);
-  }
-  figcaption {
-    display: block;
-  }
-  .wo-h3 {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--brown-color);
-  }
-  .c-label {
-    display: inline-block;
-    color: #eee;
-    background-color: rgba(139,0,10,0.9);
-    line-height: 1;
-    padding: 0.5em 0.9em;
-    margin-right: 0.5em;
-    font-size: 1.4rem;
-    font-weight: bold;
-  }
-  .view-sm {
-    display: none;
-  }
-  .js-slider_nav {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    transform: translate3d(0, -50%, 0);
-  }
-  .js-slider_nav_item.prev {
-    left: 0;
-  }
-  .js-slider_nav_item.next {
-    right: 0;
-    transform: rotateY(180deg);
-  }
-  .js-slider_nav_item {
-    position: absolute;
-    display: none;
-    width: 4rem;
-    height: 4rem;
-    border: 1px solid var(--brown-color);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .js-slider_nav_item:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 1rem;
-    top: 55%;
-    width: 1rem;
-    height: 1px;
-    background-color: var(--brown-color);
-    transform-origin: left bottom;
-    transform: translate3d(0, -50%, 0) rotate(-45deg);
-    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .js-slider_nav_item:hover {
-     transform: translate3d(-30%, 0, 0);
-  }
-  .js-slider_nav_item.next:hover {
-     transform: rotateY(180deg) translate3d(-30%, 0, 0);
-  }
-  .js-slider_nav_item:hover:before {
-    transform: translate3d(0, -50%, 0) rotate(-30deg);
-  }
-  .js-slider_nav_item:after {
-    content: "";
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    width: 2rem;
-    height: 1px;
-    background-color: var(--brown-color);
-    transform: translate3d(-50%, -50%, 0);
-  }
-  #s-1:checked ~ .js-slider .js-slider_nav .s-nav-1,
-  #s-2:checked ~ .js-slider .js-slider_nav .s-nav-2,
-  #s-3:checked ~ .js-slider .js-slider_nav .s-nav-3 {
-    display: block;
-  }
-  .js-slider_indicator {
-    position: absolute;
-    left: 0;
-    top: 63%;
     width: 100%;
     text-align: center;
-  }
-  .js-slider-indi {
+    padding: 0;
+}
+.hover-effect-scale li {
     position: relative;
     display: inline-block;
-    padding: 2rem;
-    cursor: pointer;
-  }
-  .js-slider-indi:after {
-    content: "";
+    background-color: #fff;
+    margin: 0;
+    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+/* Заголовок, текст и ссылка */
+.hover-effect-scale li h3{
+    color: #fff;
+    margin: 5px;
+}
+.hover-effect-scale li p{
+    color: #fff;
+    margin: 5px;
+}
+.hover-effect-scale li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+.hover-effect-scale li a:hover {
+    background: #454545;
+    color: #fff;
+}
+/* Выезжающий блок с текстом */ 
+.hover-effect-scale li > div {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 1rem;
-    background: var(--brown-color);
-    transform: translate3d(-50%, -50%, 0);
-  }
-  .js-slider-indi:hover:after {
-    transform: translate3d(-50%, -50%, 0) scale(1.5);
-    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  #s-1:checked ~ .js-slider .js-slider_indicator .indi-1:after,
-  #s-2:checked ~ .js-slider .js-slider_indicator .indi-2:after,
-  #s-3:checked ~ .js-slider .js-slider_indicator .indi-3:after {
-    transform: translate3d(-50%, -50%, 0) scale(2.5);
-  }
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hover-effect-scale li:hover > div {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.hover-effect-scale li div {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.35); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+}
+.hover-effect-scale li img {
+    transition: all 0.2s linear;
+}
+.hover-effect-scale li:hover img {
+    transform: scale(1.3);
+}
+.hover-effect-scale li:hover div {
+    opacity: 1;
+}
+     
 /* Футер */
 .footer {
     min-height: 880px;
