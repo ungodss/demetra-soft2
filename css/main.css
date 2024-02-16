@@ -786,7 +786,7 @@ background-size: cover;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
-    gap: 20px;
+    row-gap:23px ;
 }
 
 /* Настройки маркированного списка */
@@ -801,7 +801,6 @@ background-size: cover;
 .hover-effect-scale li {
     position: relative;
     display: inline-block;
-    background-color: #fff;
     margin: 0;
     box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
     overflow: hidden;
@@ -818,15 +817,12 @@ background-size: cover;
 .hover-effect-scale li a {
     display: block;
     text-decoration: none;
-    padding: 15px;
     color: #fff;
-    background: #000;
-    border-radius: 5px;
     margin: 0 auto;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.02s ease-in-out;
 }
 .hover-effect-scale li a:hover {
-    background: #454545;
+    border-bottom: 2px solid var(--white-color) ;
     color: #fff;
 }
 /* Выезжающий блок с текстом */ 
@@ -854,7 +850,7 @@ background-size: cover;
     transition: all 0.2s linear;
 }
 .hover-effect-scale li:hover img {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 .hover-effect-scale li:hover div {
     opacity: 1;
