@@ -585,7 +585,6 @@ margin-bottom: 30px;
     flex-direction: column;
 }
 .about__second-item {
-    margin-top: 30px;
     padding-left: 61px;
     width: 600px;
 }
@@ -594,7 +593,7 @@ margin-bottom: 30px;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: var(--brown-color);
 }
 
@@ -605,8 +604,8 @@ margin-bottom: 30px;
 
 .about__second-line1 {
     position: relative;
-    top: 37px;
-    left: 232px;
+    top: 60px;
+    left: 182px;
     background-color: var(--brown-color);
     width: 50px;
     height: 3px;
@@ -614,17 +613,17 @@ margin-bottom: 30px;
 }
 
 .about__second-line2 {
+    position: relative;
+    left: 50px;
     background-color: var(--brown-color);
     width: 900px;
     height: 3px;
-    padding-left: 50px;
 }
 
 
 .idea {
-    height: 90px;
-    margin-bottom: 130px;
-
+padding-top: 50px;
+margin-bottom: 60px;
 }
 
 .title1{
@@ -632,10 +631,9 @@ margin-bottom: 30px;
 }
 
 .process {
+    padding-top: 60px;
+    margin-bottom: 60px;
     align-self: flex-end ;
-    margin-top: 60px;
-    height: 90px;
-    margin-bottom: 183px;
 }
 
 .process-p{
@@ -648,7 +646,7 @@ margin-bottom: 30px;
 }
 
 .result {
-    height: 90px;
+    padding-top: 60px;
 }
 
 .title3{
