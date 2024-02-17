@@ -583,7 +583,6 @@ margin-bottom: 30px;
 }
 .about__second-left {
     min-width: 1193px;
-    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -604,12 +603,12 @@ margin-bottom: 30px;
 .about__second-text {
     font-size: 25px;
     color: var(--white-color);
-    margin-bottom: 38px;
 }
 
 .about__second-line1 {
-    position: absolute;
-    right: 1px;
+    position: relative;
+    top: 37px;
+    left: 232px;
     background-color: var(--brown-color);
     width: 50px;
     height: 3px;
