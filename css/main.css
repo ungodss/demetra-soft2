@@ -295,8 +295,8 @@ outline-color: white;
 
 .header__line{
     background-color: var(--brown-color);
-    width: 1150px;
-    height: 4px;
+    width: 1200px;
+    height: 3px;
 }
 
 .modal{
@@ -402,7 +402,7 @@ margin-bottom: 30px;
 
 .about__line {
     background-color: var(--brown-color);
-    width: 1300px;
+    width: 1200px;
     height: 3px;
     align-self: flex-end;
 
@@ -602,19 +602,18 @@ margin-bottom: 30px;
     color: var(--white-color);
 }
 
+.about__second-line1-cont{
+display: flex;
+justify-content: end;
+}
+
 .about__second-line1 {
-    position: relative;
-    top: 60px;
-    left: 182px;
     background-color: var(--brown-color);
-    width: 50px;
     height: 3px;
     width: 900px;
 }
 
 .about__second-line2 {
-    position: relative;
-    left: 50px;
     background-color: var(--brown-color);
     width: 900px;
     height: 3px;
@@ -665,3 +664,57 @@ background-size: cover;
 
 
 /*Услуги*/
+.services {
+    background-color: var(--bg-color);
+    min-height: 1080px;
+}
+
+.services__h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 52px;
+    padding-top: 50px;
+}
+
+.services__line {
+    position: relative;
+    right: 82px;
+    background-color: var(--brown-color);
+    width: 1200px;
+    height: 3px;
+    margin-bottom: 170px;
+}
+
+.services__grid-cont {
+    margin: 0 auto;
+    max-width: 1740px;
+}
+
+
+.services__grid {
+    color: var(--white-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 180px 115px;    
+}
+.services__item {
+}
+
+.services__item:hover{
+    color: var(--brown-color);
+}
+
+.services__title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.services__text {
+    text-align: center;
+    font-size: 25px;
+}
