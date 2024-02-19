@@ -1,3 +1,5 @@
+
+//about slider//
 const modalController = ({modal, btnClose, btnOpen}) => {
 const buttonElems = document.querySelectorAll(btnOpen);
 const modalElem = document.querySelector(modal);
